@@ -9,7 +9,7 @@ pipeline {
 
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh "docker build pundlik8083/cartservice:latest ."
-                    }
+                            }
                         }
                 }
             }
